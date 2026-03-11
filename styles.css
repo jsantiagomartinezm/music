@@ -57,17 +57,13 @@ footer{margin-top:26px;color:var(--muted);font-size:13px}
 /* decorative underline */
 h2.section-title::after{content:"";display:block;width:48px;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:3px;margin-top:8px}
 
-/* Fallback: si no hay JS, .reveal será visible */
-.reveal {
-  opacity: 1;
-  transform: none;
-  transition: opacity .6s ease, transform .6s cubic-bezier(.2,.9,.3,1);
-}
 
-/* Si JS está activo, ocultamos inicialmente y dejamos que el script revele */
-.js .reveal {
-  opacity: 0;
-  transform: translateY(18px);
+/* Transiciones y stagger controlado por CSS variables */
+.reveal {
+  transition-property: opacity, transform;
+  transition-duration: 10s;
+  transition-timing-function: cubic-bezier(.2,.9,.3,1);
+  transition-delay: var(--reveal-delay, 10s);
 }
 
 /* Estado visible cuando el script añade la clase */
