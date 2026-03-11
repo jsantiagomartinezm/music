@@ -1,21 +1,25 @@
 :root{
-  --bg:#f5efe8;          /* fondo claro más suave */
-  --card:#ffffff;        
-  --accent:#c85a12;      /* naranja otoñal más cálido y menos saturado */
-  --accent-2:#e07a2f;    
-  --muted:#7a6b5a;       
-  --text:#1f1f1f;        /* texto ligeramente más suave */
-  --glass: rgba(200,90,18,0.06);
+  /* Fondo claro (blanco) y paleta otoñal suave */
+  --bg-color: #ffffff;           /* fondo principal: blanco */
+  --bg-accent: #f6efe9;         /* sutil degradado o textura clara */
+  --card: #f2e9e1;              /* tarjetas: un poco más oscuro que el fondo */
+  --accent: #c85a12;            /* naranja para títulos y botones */
+  --accent-2: #e07a2f;
+  --muted: #7a6b5a;
+  --text: #1f1f1f;
+  --glass: rgba(200,90,18,0.04);
   --shadow: 0 10px 30px rgba(31,31,31,0.06);
 }
 
+/* Dark theme variables (si el usuario activa modo oscuro) */
 :root[data-theme="dark"]{
-  --bg:#0b0b0c;          /* oscuro profundo pero cálido */
-  --card:#121214;        
-  --accent:#ff9a3c;      /* naranja cálido para acentos */
-  --accent-2:#ff7a45;
-  --muted:#c9b79f;       /* marrón claro para textos secundarios */
-  --text:#efece7;        /* texto claro con tono crema */
+  --bg-color: #0b0b0c;
+  --bg-accent: #0f0f10;
+  --card: #161616;              /* tarjetas más claras que el fondo oscuro */
+  --accent: #ff9a3c;
+  --accent-2: #ff7a45;
+  --muted: #c9b79f;
+  --text: #efece7;
   --glass: rgba(255,154,60,0.06);
   --shadow: 0 14px 40px rgba(0,0,0,0.55);
 }
