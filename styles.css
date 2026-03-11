@@ -1,25 +1,23 @@
 :root{
-  --bg:#fbf8f5;
-  --card:#ffffff;
-  --accent:#d35400;
-  --accent-2:#e07a2f;
-  --muted:#7a6b5a;
-  --text:#1b1b1b;
-  --glass: rgba(211,84,0,0.06);
-  --shadow: 0 8px 24px rgba(27,27,27,0.08);
-  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --bg:#f5efe8;          /* fondo claro más suave */
+  --card:#ffffff;        
+  --accent:#c85a12;      /* naranja otoñal más cálido y menos saturado */
+  --accent-2:#e07a2f;    
+  --muted:#7a6b5a;       
+  --text:#1f1f1f;        /* texto ligeramente más suave */
+  --glass: rgba(200,90,18,0.06);
+  --shadow: 0 10px 30px rgba(31,31,31,0.06);
 }
 
-/* Dark theme variables */
 :root[data-theme="dark"]{
-  --bg:#0f0f10;
-  --card:#121214;
-  --accent:#ff9a3c;
+  --bg:#0b0b0c;          /* oscuro profundo pero cálido */
+  --card:#121214;        
+  --accent:#ff9a3c;      /* naranja cálido para acentos */
   --accent-2:#ff7a45;
-  --muted:#bdbdbd;
-  --text:#f5f5f5;
+  --muted:#c9b79f;       /* marrón claro para textos secundarios */
+  --text:#efece7;        /* texto claro con tono crema */
   --glass: rgba(255,154,60,0.06);
-  --shadow: 0 12px 36px rgba(0,0,0,0.6);
+  --shadow: 0 14px 40px rgba(0,0,0,0.55);
 }
 
 html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#f6efe9);color:var(--text);}
