@@ -1,2 +1,146 @@
-Juan Santiago Martínez M.
-Links (En construcción)
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juan Santiago Martínez — Compositor · Productor · Diseño Sonoro</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --card:#121214;
+      --accent:#e6b800;
+      --muted:#bdbdbd;
+      --text:#f5f5f5;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#070707);color:var(--text);}
+    .wrap{max-width:980px;margin:36px auto;padding:28px;}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:96px;height:96px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ff7a7a);display:flex;align-items:center;justify-content:center;font-weight:700;color:#111}
+    h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:22px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .section-title{font-weight:700;color:var(--accent);margin-bottom:8px}
+    .meta{font-size:14px;color:var(--muted);margin-bottom:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .project{margin-bottom:14px}
+    .project small{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+    footer{margin-top:26px;color:var(--muted);font-size:13px}
+    a.button{display:inline-block;background:var(--accent);color:#111;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+    /* responsive */
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">JS</div>
+      <div>
+        <h1>Juan Santiago Martínez</h1>
+        <p class="lead">Compositor · Productor Musical · Diseño Sonoro — Música contemporánea y electroacústica para cine y proyectos experimentales</p>
+        <div style="margin-top:10px">
+          <a class="button" href="#portfolio">Escuchar Portfolio</a>
+          <a class="button" href="#contact" style="margin-left:8px;background:#2b2b2b;color:var(--text)">Descargar CV</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Columna principal -->
+      <main>
+        <div class="card" id="about">
+          <div class="section-title">Sobre mí</div>
+          <div class="meta">Compositor y productor con enfoque contemporáneo. Trabajo música para cine, cortos y proyectos electroacústicos.</div>
+          <p>Combino herramientas digitales y experimentación sonora para construir narrativas que acompañen la imagen y el espacio. Experiencia en procesos de postproducción y colaboración con equipos audiovisuales.</p>
+        </div>
+
+        <div class="card" id="portfolio" style="margin-top:16px">
+          <div class="section-title">Portfolio seleccionado</div>
+
+          <div class="project">
+            <strong>Ornella</strong>
+            <small>Largometraje — Música original — 2026 (postproducción)</small>
+            <!-- Embed de ejemplo YouTube -->
+            <div style="margin-top:8px">
+              <!-- Reemplazá el src por tu video -->
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="project">
+            <strong>Disidentes</strong>
+            <small>Largometraje — Música original — 2020</small>
+            <div style="margin-top:8px">
+              <!-- Reemplazá por SoundCloud embed -->
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/TRACK_ID&color=%23ff5500&auto_play=false"></iframe>
+            </div>
+          </div>
+
+          <div class="project">
+            <strong>Electroacústica para conciertos</strong>
+            <small>Obras y experimentaciones presentadas en conciertos académicos</small>
+            <div style="margin-top:8px">
+              <!-- Bandcamp embed ejemplo -->
+              <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=ALBUM_ID/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="card" id="projects" style="margin-top:16px">
+          <div class="section-title">Proyectos y colaboraciones</div>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Composición para cortometrajes independientes y académicos</li>
+            <li>Colaboraciones con directores emergentes</li>
+            <li>Workshops y presentaciones en entornos educativos</li>
+          </ul>
+        </div>
+      </main>
+
+      <!-- Columna lateral -->
+      <aside>
+        <div class="card">
+          <div class="section-title">Herramientas</div>
+          <div class="skills">
+            <div class="chip">Ableton Live</div>
+            <div class="chip">Reason</div>
+            <div class="chip">Reaper</div>
+            <div class="chip">Pro Tools</div>
+            <div class="chip">Diseño Sonoro</div>
+            <div class="chip">Electroacústica</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">Contacto</div>
+          <div class="meta">Email · Redes · Booking</div>
+          <div style="margin-top:8px">
+            <a href="mailto:tuemail@example.com" style="color:var(--accent);text-decoration:none">tuemail@example.com</a>
+            <div style="margin-top:8px;color:var(--muted)">Instagram · SoundCloud · YouTube</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">Notas</div>
+          <div class="meta">Consejos rápidos</div>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Mantené clips de audio cortos y representativos</li>
+            <li>Usá títulos claros para cada proyecto</li>
+            <li>Actualizá el sitio cuando publiques nuevo material</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div>© Juan Santiago Martínez — Compositor · Productor Musical</div>
+      <div style="margin-top:6px;color:var(--muted)">Sitio alojado en GitHub Pages</div>
+    </footer>
+  </div>
+</body>
+</html>
