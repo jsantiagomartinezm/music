@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juan Santiago Martínez — Compositor · Productor · Diseño Sonoro</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <!-- Avatar con imagen: si no existe, se muestra iniciales -->
+      <div class="avatar-wrap">
+        <img src="assets/avatar.jpg" alt="Juan Santiago Martínez" class="avatar-img" onerror="this.style.display='none';document.querySelector('.avatar-fallback').style.display='flex'">
+        <div class="avatar-fallback">JS</div>
+      </div>
+
+      <div class="header-text">
+        <h1>Juan Santiago Martínez</h1>
+        <p class="lead">Compositor · Productor Musical · Diseño Sonoro — Música contemporánea y electroacústica para cine y proyectos experimentales</p>
+
+        <div class="actions">
+          <a class="button primary" href="#portfolio">Escuchar Portfolio</a>
+          <a class="button ghost" id="download-cv" href="assets/CV-JuanSantiagoMartinez.pdf" download>Descargar CV</a>
+
+          <!-- Toggle modo oscuro -->
+          <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card reveal" id="about">
+          <h2 class="section-title">Sobre mí</h2>
+          <p class="meta">Compositor y productor con enfoque contemporáneo. Trabajo música para cine, cortos y proyectos electroacústicos.</p>
+          <p>Combino herramientas digitales y experimentación sonora para construir narrativas que acompañen la imagen y el espacio. Experiencia en procesos de postproducción y colaboración con equipos audiovisuales.</p>
+        </section>
+
+        <section class="card reveal" id="portfolio">
+          <h2 class="section-title">Portfolio seleccionado</h2>
+
+          <article class="project">
+            <h3>Ornella</h3>
+            <small class="project-meta">Largometraje — Música original — 2026 (postproducción)</small>
+            <div class="embed">
+              <iframe width="100%" height="220" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Disidentes</h3>
+            <small class="project-meta">Largometraje — Música original — 2020</small>
+            <div class="embed">
+              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/TRACK_ID&color=%23d35400&auto_play=false"></iframe>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Electroacústica para conciertos</h3>
+            <small class="project-meta">Obras y experimentaciones presentadas en conciertos académicos</small>
+            <div class="embed">
+              <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=ALBUM_ID/size=large/bgcol=ffffff/linkcol=d35400/tracklist=false/transparent=true/" seamless></iframe>
+            </div>
+          </article>
+        </section>
+
+        <section class="card reveal" id="projects">
+          <h2 class="section-title">Proyectos y colaboraciones</h2>
+          <ul class="muted-list">
+            <li>Composición para cortometrajes independientes y académicos</li>
+            <li>Colaboraciones con directores emergentes</li>
+            <li>Workshops y presentaciones en entornos educativos</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <section class="card reveal">
+          <h2 class="section-title">Herramientas</h2>
+          <div class="skills">
+            <span class="chip">Ableton Live</span>
+            <span class="chip">Reason</span>
+            <span class="chip">Reaper</span>
+            <span class="chip">Pro Tools</span>
+            <span class="chip">Diseño Sonoro</span>
+            <span class="chip">Electroacústica</span>
+          </div>
+        </section>
+
+        <section class="card reveal">
+          <h2 class="section-title">Contacto</h2>
+          <p class="meta">Email · Redes · Booking</p>
+          <a class="link" href="mailto:tuemail@example.com">tuemail@example.com</a>
+          <div class="social muted">Instagram · SoundCloud · YouTube</div>
+        </section>
+
+        <section class="card reveal">
+          <h2 class="section-title">Notas</h2>
+          <ul class="muted-list">
+            <li>Mantené clips de audio cortos y representativos</li>
+            <li>Usá títulos claros para cada proyecto</li>
+            <li>Actualizá el sitio cuando publiques nuevo material</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <div>© Juan Santiago Martínez — Compositor · Productor Musical</div>
+      <div class="muted">Sitio alojado en GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
