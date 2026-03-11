@@ -67,10 +67,10 @@ h2.section-title::after{content:"";display:block;width:48px;height:3px;backgroun
 }
 
 /* Estado visible cuando el script añade la clase */
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { transition-delay: 0s; }
+.reveal:nth-of-type(1).visible { transition-delay: 0s; }
+.reveal:nth-of-type(2).visible { transition-delay: 0.06s; }
+.reveal:nth-of-type(3).visible { transition-delay: 0.12s; }
 
 /* responsive */
 @media (max-width:900px){
