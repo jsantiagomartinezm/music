@@ -53,8 +53,12 @@ footer{margin-top:26px;color:var(--muted);font-size:13px}
 /* decorative underline */
 h2.section-title::after{content:"";display:block;width:48px;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border-radius:3px;margin-top:8px}
 
-/* Reveal animation initial state */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.9,.3,1)}
+/* Reveal animation initial state (fallback: visible si el JS falla) */
+.reveal{
+  opacity:1;
+  transform:none;
+  transition:opacity .6s ease, transform .6s cubic-bezier(.2,.9,.3,1);
+}
 
 /* When JS adds .visible */
 .reveal.visible{opacity:1;transform:translateY(0)}
