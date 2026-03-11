@@ -10,10 +10,12 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="wrap">
+
+    <!-- HEADER -->
     <header>
-      <!-- Avatar con imagen: si no existe, se muestra iniciales -->
       <div class="avatar-wrap">
         <img src="assets/avatar.jpg" alt="Juan Santiago Martínez" class="avatar-img" onerror="this.style.display='none';document.querySelector('.avatar-fallback').style.display='flex'">
         <div class="avatar-fallback">JS</div>
@@ -25,22 +27,30 @@
 
         <div class="actions">
           <a class="button primary" href="#portfolio">Escuchar Portfolio</a>
-          <a class="button ghost" id="download-cv" href="assets/CV-JuanSantiagoMartinez.pdf" download>Descargar CV</a>
-
-          <!-- Toggle modo oscuro -->
+          <a class="button ghost" href="assets/CV-JuanSantiagoMartinez.pdf" download>Descargar CV</a>
           <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">🌙</button>
         </div>
       </div>
     </header>
 
+    <!-- GRID -->
     <div class="grid">
+
+      <!-- MAIN -->
       <main>
+
+        <!-- SOBRE MÍ -->
         <section class="card reveal" id="about">
           <h2 class="section-title">Sobre mí</h2>
-          <p class="meta">Compositor y productor con enfoque contemporáneo. Trabajo música para cine, cortos y proyectos electroacústicos.</p>
-          <p>Combino herramientas digitales y experimentación sonora para construir narrativas que acompañen la imagen y el espacio. Experiencia en procesos de postproducción y colaboración con equipos audiovisuales.</p>
+          <p class="meta">Compositor · Productor Musical · Diseñador de Sonido</p>
+
+          <p>
+            Compositor, productor musical, músico y diseñador de sonido. He tenido la oportunidad de aportar mi visión creativa en diferentes proyectos audiovisuales. 
+            Mi foco de trabajo es la relación Música–Sonido–Imagen, con el objetivo de aportar a la narrativa de cada una de las producciones.
+          </p>
         </section>
 
+        <!-- PORTFOLIO -->
         <section class="card reveal" id="portfolio">
           <h2 class="section-title">Portfolio seleccionado</h2>
 
@@ -70,51 +80,80 @@
           </article>
         </section>
 
+        <!-- PROYECTOS -->
         <section class="card reveal" id="projects">
-          <h2 class="section-title">Proyectos y colaboraciones</h2>
+          <h2 class="section-title">Proyectos recientes</h2>
+
+          <h3 class="subsection">2024</h3>
           <ul class="muted-list">
-            <li>Composición para cortometrajes independientes y académicos</li>
-            <li>Colaboraciones con directores emergentes</li>
-            <li>Workshops y presentaciones en entornos educativos</li>
+            <li><strong>"Joseíto"</strong> – Música Original — Dir. Alejandra Villamizar — Cortometraje</li>
+            <li><strong>"Suspiro de Esperanza"</strong> – Música Original — Dir. River Rodríguez — Cortometraje</li>
+            <li><strong>"Preciosa Sangre"</strong> – Música Original — Dir. Ingar L. García — Cortometraje</li>
+          </ul>
+
+          <h3 class="subsection">2023</h3>
+          <ul class="muted-list">
+            <li><strong>"La mujer dragón"</strong> – Música Original — Dir. José Andrés Nieto — Cortometraje (postproducción)</li>
+            <li><strong>"Disidentes"</strong> – Música Original — Dir. Alex Moscoso — Largometraje argumental</li>
+            <li><strong>"La culpa es de Alois"</strong> – Música Original — Orenoque Films — Cortometraje nominado en “¡Viva Cortos!” 2023 y “Lisbon Film Rendezvous 2023”</li>
+            <li><strong>"La fe del minero"</strong> – Música Original — Dir. José Andrés Nieto — Cortometraje</li>
+          </ul>
+
+          <h3 class="subsection">Institucional</h3>
+          <ul class="muted-list">
+            <li><strong>ICBF</strong> – Música Institucional para el Instituto Colombiano de Bienestar Familiar (2023)</li>
           </ul>
         </section>
+
       </main>
 
+      <!-- ASIDE -->
       <aside>
+
+        <!-- HABILIDADES -->
         <section class="card reveal">
-          <h2 class="section-title">Herramientas</h2>
+          <h2 class="section-title">Habilidades</h2>
           <div class="skills">
-            <span class="chip">Ableton Live</span>
-            <span class="chip">Reason</span>
-            <span class="chip">Reaper</span>
-            <span class="chip">Pro Tools</span>
-            <span class="chip">Diseño Sonoro</span>
-            <span class="chip">Electroacústica</span>
+            <span class="chip">Edición de audio</span>
+            <span class="chip">Programación MIDI</span>
+            <span class="chip">Composición para cine</span>
+            <span class="chip">Diseño sonoro</span>
+            <span class="chip">Narrativa Visual–Sonora</span>
+            <span class="chip">Desarrollo creativo</span>
           </div>
         </section>
 
+        <!-- EDUCACIÓN -->
         <section class="card reveal">
-          <h2 class="section-title">Contacto</h2>
-          <p class="meta">Email · Redes · Booking</p>
-          <a class="link" href="mailto:tuemail@example.com">tuemail@example.com</a>
-          <div class="social muted">Instagram · SoundCloud · YouTube</div>
-        </section>
-
-        <section class="card reveal">
-          <h2 class="section-title">Notas</h2>
+          <h2 class="section-title">Educación</h2>
           <ul class="muted-list">
-            <li>Mantené clips de audio cortos y representativos</li>
-            <li>Usá títulos claros para cada proyecto</li>
-            <li>Actualizá el sitio cuando publiques nuevo material</li>
+            <li><strong>Máster en Composición de Música para Cine, Series y Publicidad</strong> — EARTES (Online, Málaga) — 2024 (en curso)</li>
+            <li><strong>Curso de Composición para Cine y Teatro</strong> — Universidad Nacional de Artes (Buenos Aires) — 2024</li>
+            <li><strong>Diseñador de Sonido</strong> — Universidad Nacional de Artes (Buenos Aires) — 2020–2023</li>
+            <li><strong>Música Cinematográfica</strong> — Universidad Católica Argentina (Buenos Aires) — 2018–2019</li>
+            <li><strong>Taller de Escritura y Guion</strong> — IDARTES (Bogotá) — 2017</li>
           </ul>
         </section>
+
+        <!-- CONTACTO -->
+        <section class="card reveal" id="contact">
+          <h2 class="section-title">Contacto</h2>
+          <p class="meta">Email · Teléfono · Portfolio</p>
+
+          <p><a class="link" href="mailto:jsantiagomartinezm@gmail.com">jsantiagomartinezm@gmail.com</a></p>
+          <p class="muted">Tel: (+54) 11 2186 8858</p>
+          <p><a class="link" href="https://sonidoymusica.wixsite.com/17-70" target="_blank">Portfolio 17-70 Sonido & Música</a></p>
+        </section>
+
       </aside>
     </div>
 
+    <!-- FOOTER -->
     <footer>
       <div>© Juan Santiago Martínez — Compositor · Productor Musical</div>
       <div class="muted">Sitio alojado en GitHub Pages</div>
     </footer>
+
   </div>
 
   <script src="script.js"></script>
