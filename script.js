@@ -1,9 +1,18 @@
-// Theme toggle: guarda preferencia en localStorage
+// Theme: detecta preferencia del sistema y permite override manual (localStorage)
 (function(){
   const root = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
   const stored = localStorage.getItem('theme');
-  if(stored === 'dark') root.setAttribute('data-theme','dark');
+
+  // Detecta preferencia del sistema
+  const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Aplica prioridad: localStorage > preferencia del sistema > light por defecto
+  if(stored === 'dark' || (!stored && systemPrefersDark)) {
+    root.setAttribute('data-theme','dark');
+  } else {
+    root.removeAttribute('data-theme');
+  }
 
   function updateIcon(){
     const isDark = root.getAttribute('data-theme') === 'dark';
@@ -22,19 +31,15 @@
     }
     updateIcon();
   });
-})();
 
-// Scroll reveal simple
-(function(){
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-        // Si querés que se revele solo una vez, descomenta la siguiente línea:
-        observer.unobserve(entry.target);
+  // Escucha cambios en la preferencia del sistema y aplica solo si el usuario no eligió manualmente
+  if(window.matchMedia){
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      if(!localStorage.getItem('theme')) {
+        if(e.matches) root.setAttribute('data-theme','dark');
+        else root.removeAttribute('data-theme');
+        updateIcon();
       }
     });
-  }, {threshold: 0.12});
-  reveals.forEach(r => observer.observe(r));
+  }
 })();
