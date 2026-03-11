@@ -79,9 +79,9 @@ h2.section-title::after{content:"";display:block;width:48px;height:3px;backgroun
 /* Transiciones y stagger controlado por CSS variables */
 .reveal {
   transition-property: opacity, transform;
-  transition-duration: 2s;
+  transition-duration: 10s;
   transition-timing-function: cubic-bezier(.2,.9,.3,1);
-  transition-delay: var(--reveal-delay, 0s);
+  transition-delay: var(--reveal-delay, 10s);
 }
 
 /* responsive */
